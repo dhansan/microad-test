@@ -8,8 +8,7 @@ var gulp 		= require('gulp'),
 	uglify		= require('gulp-uglify'),
 	imageMin	= require('gulp-imagemin'),
 	concat		= require('gulp-concat'),
-	prefix		= require('gulp-autoprefixer'),
-	pump		= require('pump');
+	prefix		= require('gulp-autoprefixer');
 
 //////////////////
 // Images  Task //
@@ -26,16 +25,14 @@ gulp.task('images', function(){
 // Scripts Task //
 //////////////////
 
-gulp.task('scripts', function(pmp){
-	pump([ gulp.src(['src/scripts/**/*.js'])
+gulp.task('scripts', function(){
+	return gulp.src(['src/scripts/**/*.js'])
 		.pipe(sourcemaps.init())
 		.pipe(uglify())
 		.pipe(concat('all.js'))
 		.pipe(sourcemaps.write())
 		.pipe(gulp.dest('dist/scripts'))
-		.pipe(browserSync.stream())
-			],
-			pmp);
+		.pipe(browserSync.stream());
 	});
 
 //////////////////
