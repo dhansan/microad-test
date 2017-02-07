@@ -59,7 +59,6 @@ gulp.task('default', ['styles', 'scripts', 'images'], function(){
 		server: './'
 		});
 
-//gulp.watch('src/**/*', browserSync.reload);
 gulp.watch('src/styles/**/*.css', ['styles']); 
 gulp.watch('src/scripts/**/*.js', ['scripts']);
 gulp.watch('src/img/**/*', ['images']);
