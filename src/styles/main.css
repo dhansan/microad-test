@@ -241,7 +241,7 @@ nav:after {
   background-color: #323232;
   padding-top: 13px;
   padding-bottom: 13px;
-  color: #dcdcdc;
+  color: #a1a1a1;
 }
   .git-wrapper .amt {
     margin-top: 53px;
@@ -251,12 +251,16 @@ nav:after {
   }
 .git .title, .git .subtitle {
   font-family: 'Maven Pro', Arial, serif;
-  font-weight: normal;
   margin-top: 0;
   margin-bottom: 0;
 }
 .git .title {
-  font-size: 30pt;
+    font-size: 30pt;
+    color: #e0e0e0;
+}
+.git .subtitle {
+    font-size: 15pt;
+    color: #a1a1a1;
 }
 .git form input, .git form textarea {
   display: block;
@@ -291,18 +295,27 @@ nav:after {
 .git form button:hover {
   opacity: 1;
 }
-.git aside {
-}
   .git aside p {
     font-family: 'Lato', Arial, serif;
-    font-size: 12pt;
+    font-size: 10pt;
     line-height: 21.56pt;
     margin-top: 4.78pt;
+    text-align:justify;
+    text-justify:inter-word;
   }
   .git aside p strong {
     font-weight: 700;
-    color: #ffff;
+    color: white;
   }
+.contact-icons {
+    font-size: 9pt;
+}
+.contact-icons a {
+    color: #2eb398;
+    text-decoration: none;
+    margin-right: 15px;
+}
+
 
 /* Footer styles
 ==================================================*/
@@ -323,7 +336,7 @@ ul {
 .ab-social-icons {
     width: 350px;
     display:block;
-    margin-left: 300px;
+    margin-left: 330px;
 }
 .social-icon {
     color: #fff;
@@ -334,6 +347,7 @@ ul.social-icons {
 .social-icons li {
     vertical-align: top;
     display: inline;
+    margin-left: -5px;
     height: 100px;
 }
 .social-icons a {

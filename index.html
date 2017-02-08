@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
     <title>MicroAd Test</title>
 
@@ -28,7 +28,7 @@
   <nav>
     <div class="container_12">
       <div class="grid_5">
-        <ul class="menu left clearfix">
+        <ul class="menu left">
           <li><a href="#ab">about</a></li>
           <li class="active"><a href="#pf">portfolio</a></li>
         </ul>
@@ -39,7 +39,7 @@
         </div>
       </div>
       <div class="grid_5">
-        <ul class="menu right clearfix">
+        <ul class="menu right">
           <li><a href="#blog">blog</a></li>
           <li><a href="#git">get in touch</a></li>
         </ul>
@@ -52,9 +52,9 @@
 
 <!-- Profile
 ============================================================================== -->
-<div class="pf-wrapper"> 
+<div class="pf-wrapper" id="pf"> 
   <div class="container_12">
-    <div class="grid_10 prefix_1">
+    <div class="grid_10 prefix_1 mySlides">
       <div class="hex" style="background-image: url(src/img/1.png);">    
         <a href="#about"></a>    
         <div class="corner-1"></div>
@@ -137,7 +137,6 @@
         <div class="corner-2"></div>    
       </div>
     </div> 
-
     
     <div class="grid_12 alpha beta">
       <div class="sep amb amt"></div>
@@ -145,15 +144,15 @@
   </div> 
 </div> 
 
-<!-- Blog
+<!-- About
 ============================================================================== -->
-<div class="ab-wrapper">
+<div class="ab-wrapper" id="ab">
   <div class="container_12">
-    <div class="grid_1 clearfix">
+    <div class="grid_1">
       <div class="dv right"></div>
     </div> <!-- right divider -->
     <div class="grid_2 hexagon">
-      <img src="src/img/smith.png" class="avatar" alt="">
+      <img src="src/img/smith.png" class="avatar wow bounceInLeft" alt="">
     </div> <!-- avatar wrapper -->
     <div class="grid_7 prefix_1">
       <div class="ab">
@@ -161,8 +160,8 @@
           <h1 class="title">Smith Anderson</h1>
           <h2 class="subtitle">Illustrator & Character Designer</h2>
         </hgroup>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris porttitor, nibh at sagittis tristique, enim magna pretium augue, eget consectetur sem dui non urna. Integer gravida, diam congue molestie fringilla, elit odio rhoncus turpis, ac dictum libero elit vel metus. Morbi egestas sit amet velit eget venenatis. Mauris porttitor, nibh at sagittis tristique, enim magna pretium augue, eget consectetur sem dui non urna </p>
-      <div class="ab-social-icons">
+        <p class="wow bounceInRight">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris porttitor, nibh at sagittis tristique, enim magna pretium augue, eget consectetur sem dui non urna. Integer gravida, diam congue molestie fringilla, elit odio rhoncus turpis, ac dictum libero elit vel metus. Morbi egestas sit amet velit eget venenatis. Mauris porttitor, nibh at sagittis tristique, enim magna pretium augue, eget consectetur sem dui non urna </p>
+      <div class="ab-social-icons wow bounceInRight">
         <ul class="social-icons">
             <li><a href="" class="social-icon"> <i class="fa fa-facebook"></i></a></li>
             <li><a href="" class="social-icon"> <i class="fa fa-twitter"></i></a></li>
@@ -171,7 +170,7 @@
             <li><a href="" class="social-icon"> <i class="fa fa-linkedin"></i></a></li>
             <li><a href="" class="social-icon"> <i class="fa fa-dribbble"></i></a></li>
         </ul>
-    </div>
+      </div>
       </div> <!-- pf body -->
     </div> <!-- pf wrapper-->
     <div class="grid_1">
@@ -182,7 +181,7 @@
 
 <!-- Get in touch
 ============================================================================== -->
-<div class="git-wrapper">
+<div class="git-wrapper" id="git">
   <div class="container_12 git">
     <div class="sep dark"></div>
     <div class="grid_11 prefix_1 amt">
@@ -205,14 +204,22 @@
         <div class="form-group">
           <textarea cols="30" rows="10" placeholder="Write your message here..."></textarea>
         </div>
-        <div class="form-group clearfix">
+        <div class="form-group">
           <button>send</button>
         </div>
       </form>
     </div> <!-- git form -->
     <aside class="grid_3 amb">
       <p><strong>Quisque Hendrerit:</strong> purus dapibus, ornare nibh vitae, viverra nibh. Fusce vitae aliquam tellus. Proin sit amet volutpat libero. Nulla sed nunc et tortor luctus faucibus morbi vitae.</p> 
+      <ul class="contact-icons">
+            <li><a href="" class="contact-icon"> <i class="fa fa-map-marker"></i></a> Elm St. 14/05 Lost City</li>
+            <li><a href="" class="contact-icon"> <i class="fa fa-phone fa-flip-horizontal"></i></a>+3528 331 86 35 </li>
+            <li><a href="" class="contact-icon"> <i class="fa fa-envelope"></i></a>info@hexalcorp.com</li>
+        </ul>
     </aside> <!-- additional information -->
+    <div class="git-contact-icons">
+        
+      </div>
     <div class="sep dark"></div>
   </div>
 </div> <!-- git wrapper --> 
@@ -229,5 +236,7 @@
     <script src="dist/srcipts/all.js"></script>
     <!-- jQuery -->
     <script src="node_modules/jquery/dist/jquery.js"></script>
+
+    <script src="node_modules/wowjs/dist/wow.js"></script>
   </body>
 </html>

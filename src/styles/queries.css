@@ -1,0 +1,44 @@
+/* Big tablet  to 1200px (width smaller taht the 1140px row)
+==================================================*/
+@media only screen and (max-width: 1200px) {
+.hex {
+    left: 73px;
+    width:150px;
+    height:86px;
+    background-color: #ccc;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;           
+    -webkit-background-size: auto 173px;                            
+    -moz-background-size: auto 173px;                           
+    -ms-background-size: auto 173px;                            
+    -o-background-size: auto 173px;                         
+    position: relative;
+    float:left;
+    margin:50px 5px;
+    text-align:center;
+    zoom:1;
+}
+.container_12 {padding: 0 2%;}	
+}
+
+
+/* Small tablet  to big tablets: from 768 to 1023px;
+==================================================*/
+@media only screen and (max-width: 1023px) {
+
+}
+
+
+
+/* Small phone  to small tablets: from 481 to 787px;
+==================================================*/
+@media only screen and (max-width: 767px) {
+
+}
+
+
+/* Small phone 0 to 480px
+==================================================*/
+@media only screen and (max-width: 480px) {
+
+}
