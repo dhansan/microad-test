@@ -5,24 +5,313 @@
 * 
 *************************************************/
 
-
-/* Table of Content
-==================================================
-    - General Basic Setup-
-    - Typography -
-    - Header styles -
-    - Logo styles -
-    - Start something new & Kids Apparel Search -
-    - Feature Section -
-    - Color styles -
-    - Detail Section -
-    - More Power Section -
-    - Onboard Section -
-    - Plan Section -
-    - Footer Section -
-    - Stay in touch styles -
-*/
-
-
-/* General Basic Setup
+/* Garis
 ==================================================*/
+.sep {
+  height: 1px;
+  width: 100%;
+  background-color: #e4e9eb;
+}
+
+.sep.amb {
+  margin-bottom: 10px;
+}
+
+.sep.dark {
+  background-color: #2b2b2b;
+}
+
+.sep.amt {
+  margin-top: 8px;
+}
+
+/* Header styles
+==================================================*/
+
+header {
+  position: relative;
+}
+
+nav {
+  height: 63px;
+  background-color: #323232;
+}
+
+nav .menu {
+    box-sizing: border-box;
+    height: 63px;
+    line-height: 63px; 
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+nav .menu.left { position: relative; right: -10px; }
+   
+nav .menu.right { position: relative; left: -10px; }
+
+nav .menu li { display: inline-block; }
+
+nav .menu.left li { float: right; margin-left: 25px; }
+    
+nav .menu.right li { float: left; margin-right: 25px; }
+    
+nav .menu li a { text-decoration: none; text-transform: uppercase; font-size: 11pt; color: white; }
+    
+nav .menu li:hover a, nav .menu li.active a { color: #2eb398; }
+
+nav:after {
+  content: '';
+  position: absolute;
+  bottom: -40px;
+  left: 50%;
+  margin-left: -43px;
+  height: 0;
+  widows: 0;
+  display: block;
+  border-top: 26px solid #323232;
+  border-bottom: 26px solid transparent;
+  border-left: 45px solid transparent;
+  border-right: 45px solid transparent;
+}
+
+/* Logo styles
+==================================================*/
+
+.logo { height: 63px; line-height: 63px; text-align: center; }
+    
+.logo img { display: inline; vertical-align: bottom; }
+
+
+/* Portfolio styles
+==================================================*/
+.hex {
+
+    left: 73px;
+    width:150px;
+    height:86px;
+    background-color: #ccc;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;           
+    -webkit-background-size: auto 173px;                            
+    -moz-background-size: auto 173px;                           
+    -ms-background-size: auto 173px;                            
+    -o-background-size: auto 173px;                         
+    position: relative;
+    float:left;
+    margin:50px 5px;
+    text-align:center;
+    zoom:1;
+}
+    
+    .hex a {
+        display:block;
+        width: 100%;
+        height:100%;
+        text-indent:-9999em;
+        position:absolute;
+        top:0;
+        left:0;
+    }
+
+    .hex .corner-1,
+    .hex .corner-2 {
+        position: absolute;
+        top:0;
+        left:0;
+        width:100%;
+        height:100%;
+        background: inherit;                                
+        z-index:-2;                     
+        overflow:hidden;
+        -webkit-backface-visibility: hidden;
+        -moz-backface-visibility: hidden;
+        -ms-backface-visibility: hidden;
+        -o-backface-visibility: hidden;         
+        backface-visibility: hidden;            
+    }
+    
+    .hex .corner-1 {
+        z-index:-1;
+        -webkit-transform: rotate(60deg);
+        -moz-transform: rotate(60deg);
+        -ms-transform: rotate(60deg);
+        -o-transform: rotate(60deg);
+        transform: rotate(60deg);
+    }
+    
+    .hex .corner-2 {
+        -webkit-transform: rotate(-60deg);
+        -moz-transform: rotate(-60deg);
+        -ms-transform: rotate(-60deg);
+        -o-transform: rotate(-60deg);
+        transform: rotate(-60deg);
+    }
+    
+    .hex .corner-1:before,
+    .hex .corner-2:before {
+        width: 173px;
+        height: 173px;
+      content: '';
+      position: absolute;
+      background: inherit;
+      top:0;
+      left: 0;
+      z-index: 1;
+      background: inherit;
+      background-repeat:no-repeat;
+        -webkit-backface-visibility: hidden;
+        -moz-backface-visibility: hidden;
+        -ms-backface-visibility: hidden;
+        -o-backface-visibility: hidden; 
+        backface-visibility: hidden;                  
+    }           
+    
+
+    .hex .corner-1:before {
+        -webkit-transform: rotate(-60deg) translate(-87px, 0px);
+        -moz-transform: rotate(-60deg) translate(-87px, 0px);
+        -ms-transform: rotate(-60deg) translate(-87px, 0px);
+        -o-transform: rotate(-60deg) translate(-87px, 0px);
+        transform: rotate(-60deg) translate(-87px, 0px);    
+      -webkit-transform-origin: 0 0;
+      -moz-transform-origin: 0 0;
+      -ms-transform-origin: 0 0;
+      -o-transform-origin: 0 0;
+      transform-origin: 0 0;
+    }           
+    
+    .hex .corner-2:before {
+        -webkit-transform: rotate(60deg) translate(-48px, -11px);
+        -moz-transform: rotate(60deg) translate(-48px, -11px);
+        -ms-transform: rotate(60deg) translate(-48px, -11px);
+        -o-transform: rotate(60deg) translate(-48px, -11px);
+        transform: rotate(60deg) translate(-48px, -11px);   
+        bottom:0;
+    }   
+
+/* About styles
+==================================================*/
+.ab-wrapper {
+  background-color: #2eb398;
+  padding-top: 13px;
+  padding-bottom: 13px;
+}
+  .ab-wrapper .avatar {
+    margin-top: 55px;
+  }
+.ab {
+  margin-left: -20px;
+  margin-top: 46px;
+}
+  .ab .title, .ab .subtitle {
+    font-family: 'Maven Pro', Arial, serif;
+    font-weight: normal;
+    color: #20816d;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+  .ab .title {
+    font-size: 30pt;
+    color: #d7fcf5;
+  }
+  .ab p {
+    line-height: 21.56pt;
+    color: #d7fcf5;
+    font-family: 'Lato', Arial, serif;
+    text-align:justify;
+    text-justify:inter-word;
+  }
+
+.dv {
+  height: 316px;
+  width: 1px;
+  background-color: #219d84;
+}
+.dv.right {
+  float: right;
+}
+.dv.left {
+  float: left;
+}
+
+/* Get in touch styles
+==================================================*/
+.git-wrapper {
+  background-color: #323232;
+  padding-top: 13px;
+  padding-bottom: 13px;
+  color: #d7fcf5;
+}
+  .git-wrapper .amt {
+    margin-top: 53px;
+  }
+  .git-wrapper .amb {
+    margin-bottom: 53px;
+  }
+.git .title, .git .subtitle {
+  font-family: 'Maven Pro', Arial, serif;
+  font-weight: normal;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+.git .title {
+  font-size: 30pt;
+}
+.git form input, .git form textarea {
+  display: block;
+  width: 100%;
+  margin-top: 16px;
+  box-sizing: border-box;
+  padding: 13px 15px 13px 15px;
+  border: none;
+  background: none;
+  background-color: #454545;
+  resize: none;
+}
+.git form input:focus, .git form textarea:focus {
+  outline: none;
+}
+.git form button {
+  border: none;
+  background: none;
+  margin-top: 16px;
+  float: right;
+  background-color: #2eb398;
+  height: 37px;
+  line-height: 37px;
+  width: 90px;
+  opacity: 0.9;
+  -webkit-transition: all .25s ease;
+     -moz-transition: all .25s ease;
+      -ms-transition: all .25s ease;
+       -o-transition: all .25s ease;
+          transition: all .25s ease;
+}
+.git form button:hover {
+  opacity: 1;
+}
+.git aside {
+}
+  .git aside p {
+    font-family: 'Lato', Arial, serif;
+    font-size: 12pt;
+    line-height: 21.56pt;
+    margin-top: 4.78pt;
+  }
+  .git aside p strong {
+    font-weight: 700;
+  }
+
+/* Footer styles
+==================================================*/
+footer {
+  padding-top: 13px;
+  padding-bottom: 13px;
+  background-color: #222222;
+  color: #454545;
+  font-size: 12pt;
+}
+
+
+
