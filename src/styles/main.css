@@ -308,12 +308,17 @@ nav:after {
     color: white;
   }
 .contact-icons {
-    font-size: 9pt;
+    font-size: 10pt;
+    margin-top: 50px;
 }
 .contact-icons a {
     color: #2eb398;
     text-decoration: none;
     margin-right: 15px;
+}
+
+.contact-icons li {
+  margin-top: 10px;
 }
 
 
